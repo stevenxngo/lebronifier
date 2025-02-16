@@ -11,5 +11,10 @@
 
 body {
   @apply bg-cover bg-center bg-no-repeat;
-  background-image: url('/sunshine.jpg');
+  background-image: url("/sunshine.jpg");
+}
+
+@theme {
+  --color-laker-purple: #552583;
+  --color-laker-gold: #fdb927;
 }

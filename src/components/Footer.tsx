@@ -3,7 +3,7 @@ function Footer() {
   const year = date.getFullYear();
   return (
     <footer>
-      <p>© {year}. Built with React and Vite, deployed on Github Pages.</p>
+      <p>© {year}. Built with React and Vite.</p>
     </footer>
   );
 }

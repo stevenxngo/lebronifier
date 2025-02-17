@@ -1,4 +1,6 @@
 import { useState } from "react";
+import LeWord from "./components/LeWord";
+import Footer from "./components/Footer";
 import { lebronify } from "./logic/algorithm";
 import { FaCrown } from "react-icons/fa";
 import "./App.css";
@@ -16,11 +18,11 @@ function App() {
   };
 
   return (
-    <div className="relative flex h-screen flex-col content-center bg-black/50 text-center text-white">
+    <div className="relative flex h-screen flex-col content-center justify-around bg-black/50 text-center text-white">
       <h1 className="text-laker-purple pt-12 text-5xl font-bold drop-shadow-lg">
         LeBronifier
       </h1>
-      <div className="flex translate-y-24 flex-row justify-center md:translate-y-32 lg:translate-y-48">
+      <div className="flex flex-row justify-center">
         <input
           type="text"
           name="word"
@@ -39,11 +41,8 @@ function App() {
           <FaCrown className="text-xl" />
         </button>
       </div>
-      {leword && (
-        <div className="translate-y-32 text-2xl font-semibold md:translate-y-40 lg:translate-y-56">
-          {leword}
-        </div>
-      )}
+      <LeWord text={leword} />
+      <Footer />
     </div>
   );
 }

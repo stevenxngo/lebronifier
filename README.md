@@ -4,6 +4,8 @@ LeBronifier is a web app that transforms a word into a 'LeWord', where the prefi
 
 **Please Note:** This project is a joke and should not be taken seriously.
 
+![LeBronifier](/public/screenshot.png)
+
 ## Algorithm
 
 * If the first or second letter is 'o', append 'LeBr' accordingly
